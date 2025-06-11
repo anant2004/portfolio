@@ -7,6 +7,7 @@ import {
   IconBrandX,
   IconBrandInstagram,
   IconMail,
+  IconFile,
 } from "@tabler/icons-react";
 
 export function GridBackgroundDemo() {
@@ -14,27 +15,27 @@ export function GridBackgroundDemo() {
     {
       title: "GitHub",
       icon: <IconBrandGithub className="h-full w-full" />,
-      href: "https://github.com/anant-357",
+      href: "https://github.com/anant2004",
     },
     {
       title: "LinkedIn",
       icon: <IconBrandLinkedin className="h-full w-full" />,
-      href: "https://www.linkedin.com/in/anant-sharma-62670b24b/",
+      href: "https://www.linkedin.com/in/anant-kumar-140107266/",
     },
     {
       title: "X",
       icon: <IconBrandX className="h-full w-full" />,
-      href: "https://twitter.com/anant_357",
+      href: "https://x.com/anant_ak17",
     },
     {
-      title: "Instagram",
-      icon: <IconBrandInstagram className="h-full w-full" />,
-      href: "https://www.instagram.com/anant.357/",
+      title: "Resume",
+      icon: <IconFile className="h-full w-full" />,
+      href: "https://drive.google.com/file/d/1FjR21zi5xCYDYOutLzjEas2ACXEP6xEo/view?usp=sharing",
     },
     {
       title: "Email",
       icon: <IconMail className="h-full w-full" />,
-      href: "mailto:anant.sharma.bit@gmail.com",
+      href: "https://mail.google.com/mail/?view=cm&fs=1&to=anant2004infinity@gmail.com",
     },
   ];
 

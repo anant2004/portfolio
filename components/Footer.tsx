@@ -17,44 +17,36 @@ export function Footer() {
             </p>
           </div>
 
-          {/* Navigation Sections */}
-          <div className="space-y-4">
-            <h3 className="text-sm text-zinc-400 uppercase">Me</h3>
-            <nav className="flex flex-col space-y-3">
-              <Link href="/projects" className="text-zinc-300 hover:text-white transition-colors">Projects</Link>
-              <Link href="/blog" className="text-zinc-300 hover:text-white transition-colors">Blog</Link>
-              <Link href="/bookmarks" className="text-zinc-300 hover:text-white transition-colors">Bookmarks</Link>
+          {/* Empty columns for spacing */}
+          <div></div>
+          <div></div>
+
+          {/* Navigation Sections - Now on the right */}
+          <div className="space-y-4 text-right">
+            <h3 className="text-sm text-zinc-400 uppercase">ME</h3>
+            <nav className="flex flex-col items-end space-y-3">
+              <Link href="https://github.com/anant2004" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white transition-colors">GitHub</Link>
+              <Link href="https://gupdav.com" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white transition-colors">Gupdav</Link>
+              <Link href="https://www.linkedin.com/in/anant-kumar-140107266/" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white transition-colors">LinkedIn</Link>
+              <Link href="https://drive.google.com/file/d/1FjR21zi5xCYDYOutLzjEas2ACXEP6xEo/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="text-zinc-300 hover:text-white transition-colors">Resume</Link>
             </nav>
           </div>
-
-          <div className="space-y-4">
-            <h3 className="text-sm text-zinc-400 uppercase">This site</h3>
-            <nav className="flex flex-col space-y-3">
-              <Link href="/analytics" className="text-zinc-300 hover:text-white transition-colors">Analytics</Link>
-              <Link href="/rss" className="text-zinc-300 hover:text-white transition-colors">RSS</Link>
-              <Link href="/source" className="text-zinc-300 hover:text-white transition-colors">Source code</Link>
-            </nav>
-          </div>
-
         </div>
 
         {/* Bottom Section */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-12 border-t border-zinc-800">
           <div className="flex space-x-6 mb-4 md:mb-0">
-            <Link href="https://github.com" target="_blank" className="text-zinc-400 hover:text-white transition-colors">
+            <Link href="https://github.com/anant2004" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
               <FaGithub className="w-6 h-6" />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" className="text-zinc-400 hover:text-white transition-colors">
+            <Link href="https://www.linkedin.com/in/anant-kumar-140107266/" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
               <FaLinkedin className="w-6 h-6" />
             </Link>
-            <Link href="https://notion.so" target="_blank" className="text-zinc-400 hover:text-white transition-colors">
-              <SiNotion className="w-6 h-6" />
-            </Link>
-            <Link href="mailto:example@email.com" className="text-zinc-400 hover:text-white transition-colors">
-              <FaEnvelope className="w-6 h-6" />
-            </Link>
-            <Link href="https://twitter.com" target="_blank" className="text-zinc-400 hover:text-white transition-colors">
+            <Link href="https://x.com/anant_ak17" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
               <FaXTwitter className="w-6 h-6" />
+            </Link>
+            <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=anant2004infinity@gmail.com" target="_blank" rel="noopener noreferrer" className="text-zinc-400 hover:text-white transition-colors">
+              <FaEnvelope className="w-6 h-6" />
             </Link>
           </div>
           <div className="text-zinc-400 text-sm">

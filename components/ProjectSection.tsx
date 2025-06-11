@@ -5,24 +5,24 @@ import Image from "next/image";
 const projects = [
   {
     year: "2024",
-    title: "Bookmarked Android: A Simple Viewer for My Bookmarked Content",
-    description: "Built with Jetpack Compose, it aims to offer an improved reading experience on my laggy phone.",
-    image: "https://images.unsplash.com/photo-1618761714954-0b8cd0026356?q=80&w=1170&auto=format&fit=crop",
-    link: "#"
+    title: "Gupdav.com: The Personal Branding and Content Universe",
+    description: "Helping business owners and founders start and grow their content to put themselves out and define a face for everything they do.",
+    image: "/gupdav.png",
+    link: "https://gupdav.com"
   },
   {
     year: "2024",
-    title: "Bookmarked: Your Go-To Tool for Curating Tweets in Notion",
-    description: "A full-stack application enabling users to save tweets to Notion via Telegram bot.",
+    title: "VideoTube: First Backend Project",
+    description: "A foundational backend project built with Node.js, Express, and MongoDB, demonstrating core server-side development concepts through a video-sharing platform implementation.",
     image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1170&auto=format&fit=crop",
-    link: "#"
+    link: "https://github.com/anant2004/First-backend-project"
   },
   {
-    year: "2024",
-    title: "Bookmarked: Your Go-To Tool for Curating Tweets in Notion",
-    description: "A full-stack application enabling users to save tweets to Notion via Telegram bot.",
+    year: "2025",
+    title: "Portfolio: A showcase of my work and skills",
+    description: "A modern, responsive portfolio website built with Next.js, React, and TailwindCSS, showcasing my projects, skills, and professional journey through an elegant and interactive user interface.",
     image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1170&auto=format&fit=crop",
-    link: "#"
+    link: "https://github.com/anant2004/portfolio"
   }
 ];
 
@@ -49,7 +49,9 @@ export function ProjectSection() {
             </p>
           </div>
           <Link 
-            href="/projects" 
+            href="https://github.com/anant2004" 
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 px-6 py-3 text-base text-white border border-zinc-800 rounded-full hover:bg-zinc-800/50 transition-colors"
           >
             View all projects
@@ -62,7 +64,7 @@ export function ProjectSection() {
         {/* Projects Grid */}
         <div className="grid grid-cols-3 gap-6">
           {projects.map((project, index) => (
-            <Link href={project.link} key={index} className="group">
+            <Link href={project.link} key={index} className="group" target="_blank" rel="noopener noreferrer">
               <div className="relative aspect-[4/3] mb-6 rounded-lg overflow-hidden">
                 <Image
                   src={project.image}
@@ -82,7 +84,9 @@ export function ProjectSection() {
 
         {/* Mobile View All Projects Button */}
         <Link 
-          href="/projects" 
+          href="https://github.com/anant2004" 
+          target="_blank"
+          rel="noopener noreferrer"
           className="md:hidden flex items-center justify-center gap-2 px-6 py-3 mt-12 text-base text-white border border-zinc-800 rounded-full hover:bg-zinc-800/50 transition-colors"
         >
           View all projects
