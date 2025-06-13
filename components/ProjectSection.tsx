@@ -21,7 +21,7 @@ const projects = [
     year: "2025",
     title: "Portfolio: A showcase of my work and skills",
     description: "A modern, responsive portfolio website built with Next.js, React, and TailwindCSS, showcasing my projects, skills, and professional journey through an elegant and interactive user interface.",
-    image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1170&auto=format&fit=crop",
+    image: "/portfolio.png",
     link: "https://github.com/anant2004/portfolio"
   }
 ];
@@ -62,7 +62,7 @@ export function ProjectSection() {
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {projects.map((project, index) => (
             <Link href={project.link} key={index} className="group" target="_blank" rel="noopener noreferrer">
               <div className="relative aspect-[4/3] mb-6 rounded-lg overflow-hidden">
