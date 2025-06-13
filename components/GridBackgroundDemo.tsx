@@ -5,7 +5,6 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandX,
-  IconBrandInstagram,
   IconMail,
   IconFile,
 } from "@tabler/icons-react";
@@ -84,8 +83,7 @@ export function GridBackgroundDemo() {
         <div className="mt-8 max-w-3xl">
           <FloatingDock 
             items={socialLinks}
-            desktopClassName="relative"
-            mobileClassName="relative"
+            className="relative"
           />
         </div>
       </div>
