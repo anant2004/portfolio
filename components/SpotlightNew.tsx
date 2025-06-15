@@ -1,34 +1,36 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { Spotlight } from "./ui/spotlight-new";
 
 const projects = [
-  {
-    year: "2024",
-    title: "Gupdav.com: The Personal Branding and Content Universe",
-    description: "Helping business owners and founders start and grow their content to put themselves out and define a face for everything they do.",
-    image: "/gupdav.png",
-    link: "/projects/gupdav"
-  },
-  {
-    year: "2024",
-    title: "VideoTube: First Backend Project",
-    description: "A foundational backend project built with Node.js, Express, and MongoDB, demonstrating core server-side development concepts through a video-sharing platform implementation.",
-    image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1170&auto=format&fit=crop",
-    link: "/projects/videotube"
-  },
-  {
-    year: "2025",
-    title: "Portfolio: A showcase of my work and skills",
-    description: "A modern, responsive portfolio website built with Next.js, React, and TailwindCSS, showcasing my projects, skills, and professional journey through an elegant and interactive user interface.",
-    image: "/portfolio.png",
-    link: "/projects/portfolio"
-  }
-];
+    {
+      year: "2024",
+      title: "Gupdav.com: The Personal Branding and Content Universe",
+      description: "Helping business owners and founders start and grow their content to put themselves out and define a face for everything they do.",
+      image: "/gupdav.png",
+      link: "/projects/gupdav"
+    },
+    {
+      year: "2024",
+      title: "VideoTube: First Backend Project",
+      description: "A foundational backend project built with Node.js, Express, and MongoDB, demonstrating core server-side development concepts through a video-sharing platform implementation.",
+      image: "https://images.unsplash.com/photo-1555421689-491a97ff2040?q=80&w=1170&auto=format&fit=crop",
+      link: "/projects/videotube"
+    },
+    {
+      year: "2025",
+      title: "Portfolio: A showcase of my work and skills",
+      description: "A modern, responsive portfolio website built with Next.js, React, and TailwindCSS, showcasing my projects, skills, and professional journey through an elegant and interactive user interface.",
+      image: "/portfolio.png",
+      link: "/projects/portfolio"
+    }
+  ];
 
-export function ProjectSection() {
+export function SpotlightNewDemo() {
   return (
-    <div className="w-full bg-black text-white py-24 px-4 sm:px-8 md:px-12 lg:px-24">
+    <div className="h-[60rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-start mb-12">
@@ -48,34 +50,25 @@ export function ProjectSection() {
               Explore how I've tackled challenges and built solutions along the way.
             </p>
           </div>
-          <Link 
-            href="/projects"
-            className="hidden md:flex items-center gap-2 px-6 py-3 text-base text-white border border-zinc-800 rounded-full hover:bg-zinc-800/50 transition-colors"
-          >
-            View all projects
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-              <path d="M6.5 3.5L11 8L6.5 12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
-          </Link>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {projects.map((project, index) => (
-            <Link href={project.link} key={index} className="group" target="_blank" rel="noopener noreferrer">
-              <div className="relative aspect-[4/3] mb-6 rounded-lg overflow-hidden">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-105"
-                />
-              </div>
-              <div className="space-y-3">
-                <div className="text-zinc-500">{project.year}</div>
-                <h3 className="text-2xl font-normal line-clamp-2">{project.title}</h3>
-                <p className="text-zinc-400 line-clamp-2">{project.description}</p>
-              </div>
+            <Link href={project.link} key={index} className="group border border-zinc-700 rounded-lg p-6">
+                <div className="relative aspect-[4/3] mb-6 rounded-lg overflow-hidden max-w-[320px] mx-auto">
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                </div>
+                <div className="space-y-3">
+                  <div className="text-zinc-500">{project.year}</div>
+                  <h3 className="text-2xl font-normal line-clamp-2">{project.title}</h3>
+                  <p className="text-zinc-400 line-clamp-2">{project.description}</p>
+                </div>
             </Link>
           ))}
         </div>
@@ -93,6 +86,7 @@ export function ProjectSection() {
           </svg>
         </Link>
       </div>
+      <Spotlight/>
     </div>
   );
 }
