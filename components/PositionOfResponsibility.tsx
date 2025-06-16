@@ -1,4 +1,5 @@
 import React from "react";
+import { LinkPreview } from "./ui/link-preview";
 
 export function PositionOfResponsibility() {
   return (
@@ -8,7 +9,9 @@ export function PositionOfResponsibility() {
           <div className="w-full rounded-lg border border-zinc-800 p-2">
             <div>
               <div className="flex justify-between items-center">
-                <h3 className="text-xl text-white font-normal">Rookus.in</h3>
+                <LinkPreview url="https://www.rookus.in" className="flex items-center gap-2">
+                  <h3 className="text-xl text-white font-normal">Rookus.in</h3>
+                </LinkPreview>{" "}
                 <p className="text-lg text-zinc-500 font-normal">May 2025 - present</p>
               </div>
               <p className="text-base text-zinc-600 font-normal mt-1">Backend Developer</p>
@@ -17,7 +20,9 @@ export function PositionOfResponsibility() {
           <div className="w-full rounded-lg border border-zinc-800 p-2">
             <div>
               <div className="flex justify-between items-center">
-                <h3 className="text-xl text-white font-normal">Sociecty of Data Science</h3>
+                <LinkPreview url="https://sdsbitmesra.netlify.app/" className="flex items-center gap-2">
+                  <h3 className="text-xl text-white font-normal">Sociecty of Data Science</h3>
+                </LinkPreview>
                 <p className="text-lg text-zinc-500 font-normal">Feb 2025 - present</p>
               </div>
               <p className="text-base text-zinc-600 font-normal mt-1">Technical Team Lead</p>

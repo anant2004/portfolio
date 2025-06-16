@@ -30,7 +30,8 @@ const projects = [
 
 export function SpotlightNewDemo() {
   return (
-    <div className="h-[60rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className=" w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.02] relative overflow-hidden px-4 sm:px-8 py-4 md:px-12 lg:px-24  mx-auto w-full pb-24 md:pb-0">
+      {/* optimize for mobile version */}
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="flex justify-between items-start mb-12">
@@ -72,19 +73,6 @@ export function SpotlightNewDemo() {
             </Link>
           ))}
         </div>
-
-        {/* Mobile View All Projects Button */}
-        <Link 
-          href="https://github.com/anant2004" 
-          target="_blank"
-          rel="noopener noreferrer"
-          className="md:hidden flex items-center justify-center gap-2 px-6 py-3 mt-12 text-base text-white border border-zinc-800 rounded-full hover:bg-zinc-800/50 transition-colors"
-        >
-          View all projects
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-            <path d="M6.5 3.5L11 8L6.5 12.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </Link>
       </div>
       <Spotlight/>
     </div>

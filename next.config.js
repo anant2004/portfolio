@@ -1,8 +1,16 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  images: {
-    domains: ['images.unsplash.com'],
-  },
-};
+const withMDX = require('@next/mdx')({
+  extension: /\.mdx?$/
+})
 
-module.exports = nextConfig; 
+/** @type {import('next').NextConfig} */
+const nextConfig = withMDX({
+  pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  images: {
+    domains: [
+      'images.unsplash.com',
+      'api.microlink.io'
+    ],
+  },
+})
+
+module.exports = nextConfig

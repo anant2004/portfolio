@@ -82,9 +82,7 @@ export function ProjectSection() {
 
         {/* Mobile View All Projects Button */}
         <Link 
-          href="https://github.com/anant2004" 
-          target="_blank"
-          rel="noopener noreferrer"
+          href="/projects" 
           className="md:hidden flex items-center justify-center gap-2 px-6 py-3 mt-12 text-base text-white border border-zinc-800 rounded-full hover:bg-zinc-800/50 transition-colors"
         >
           View all projects
